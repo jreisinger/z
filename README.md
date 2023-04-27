@@ -1,5 +1,6 @@
-Z is a Go package that allows you to easily build CLI tools that concurrently
-process lines from STDIN. See `cmd` folder for such tools.
+Z is a simple Go package that allows you easily build CLI tools that concurrently process lines from STDIN.
+
+See `cmd` folder for such tools.
 
 To use the tools, for example:
 
