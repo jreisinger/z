@@ -1,3 +1,5 @@
+[![StandWithUkraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md)
+
 Z is a simple Go package that allows you easily build CLI tools that concurrently process lines from STDIN.
 
 See `cmd` folder for such tools.
