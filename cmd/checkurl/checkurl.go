@@ -19,22 +19,22 @@ type resource struct {
 	status bool
 }
 
-func (t *resource) Process() {
-	resp, err := http.Get(t.url)
+func (r *resource) Process() {
+	resp, err := http.Get(r.url)
 	if err != nil {
 		return
 	}
 	if resp.StatusCode == http.StatusOK {
-		t.status = true
+		r.status = true
 	}
 }
 
-func (t *resource) Print() {
+func (r *resource) Print() {
 	status := map[bool]string{
 		true:  "OK",
 		false: "NOTOK",
 	}
-	fmt.Printf("%-5s %s\n", status[t.status], t.url)
+	fmt.Printf("%-5s %s\n", status[r.status], r.url)
 }
 
 func main() {
